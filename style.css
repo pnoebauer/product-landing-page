@@ -1,21 +1,21 @@
-/* #image-box {
-	display: inline-block;
-	width: auto;
-	height: 210px;
-	background-color: red;
-	overflow: hidden;
+:root {
+	--page-width: 420px;
+	--page-height: 315px;
 }
-#image-box img {
-	display: block;
-} */
+
+body {
+	text-align: center;
+	font-family: sans-serif;
+}
 
 #image-box {
 	display: inline-block;
 
-	width: 100px;
-	height: 80px;
+	width: 50px;
+	height: 40px;
 	overflow: hidden;
 }
+
 img {
 	/* display: block; */
 
@@ -28,4 +28,99 @@ img {
 	height: 500px;
 	width: 100%;
 	background-color: red;
+}
+
+#header {
+	background-color: grey;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+
+	position: sticky;
+	top: 0;
+}
+
+#nav-bar {
+	display: flex;
+}
+
+a {
+	cursor: pointer;
+	/* text-decoration: none; */
+	color: white;
+}
+
+h1 {
+	text-shadow: 1px 1px 2px rgb(233, 226, 227);
+}
+
+h2 {
+	text-shadow: rgb(163, 162, 159) 1px 0 10px;
+}
+
+#nav-bar > a {
+	padding: 0 5px;
+}
+
+#video {
+	border: 5px solid grey;
+	border-radius: 2px;
+	box-shadow: 10px 5px 5px lightgrey;
+
+	width: var(--page-width);
+	height: var(--page-height);
+	box-sizing: border-box;
+}
+
+#main-page {
+	width: var(--page-width);
+	margin: auto;
+}
+
+#form {
+	background-color: rgb(3, 85, 179);
+	padding: 20px 20px 0 20px;
+	border-radius: 5px;
+	/* position: relative; */
+}
+
+.form-group {
+	margin: 0 20px 10px 20px;
+	padding: 5px;
+}
+
+label {
+	color: white;
+	font-size: 1.135rem;
+	margin-right: 8px;
+}
+
+.form-control {
+	padding: 5px;
+	font-size: 1.135rem;
+}
+
+#submit {
+	font-size: 1.1rem;
+	font-family: inherit;
+	padding: 5px;
+	cursor: pointer;
+	outline: none;
+}
+
+#submit-form-group {
+	/* display: flex;
+	justify-content: flex-end; */
+	/* position: absolute;
+	bottom: 0; */
+
+	/* width: 30%;
+	margin-left: auto; */
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		background-color: lightblue;
+	}
 }

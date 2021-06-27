@@ -9,7 +9,6 @@
 	</head>
 	<body>
 		<header id="header">
-			<span>My product landing page</span>
 			<div id="image-box">
 				<img
 					src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS41zSmUvh5DJZqsgDOhEw2j1-MdOMphmvDng&usqp=CAU"
@@ -17,29 +16,59 @@
 					id="header-img"
 				/>
 			</div>
+			<!-- <span>Product X</span> -->
+
 			<nav id="nav-bar">
-				<p><a href="#product" class="nav-link">The product</a></p>
-				<p><a href="#how-it-works" class="nav-link">How it works</a></p>
-				<p><a href="#benefits" class="nav-link">The benefits</a></p>
+				<a href="#product" class="nav-link">Highlights</a>
+				<a href="#how-it-works" class="nav-link">How it works</a>
+				<a href="#form" class="nav-link">Contact</a>
 			</nav>
 		</header>
+
+		<h1>Product X</h1>
 
 		<!-- <video width="500" height="400" controls>
 			<source src="https://www.youtube.com/embed/TCMnrssX1NE" type="video/mp4" />
 		</video> -->
 		<!-- src="http://www.youtube.com/embed/nIsCs9_-LP8" -->
-		<div class="spacer"></div>
+		<!-- <div class="spacer"></div> -->
 
-		<div id="product">
-			<iframe
-				id="video"
-				width="420"
-				height="315"
-				src="https://www.youtube.com/embed/TCMnrssX1NE"
-				frameborder="0"
-				allowfullscreen
-			></iframe>
-		</div>
+		<section id="main-page">
+			<h2>Highlights</h2>
+			<div id="product">
+				<iframe
+					id="video"
+					src="https://www.youtube.com/embed/TCMnrssX1NE"
+					frameborder="0"
+					allowfullscreen
+				></iframe>
+			</div>
+
+			<h2>How it works</h2>
+			<p id="how-it-works">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ea libero culpa
+				at eveniet velit assumenda ab corrupti, dolorum rem dignissimos necessitatibus
+				nam, molestiae nihil asperiores doloremque ex blanditiis soluta.
+			</p>
+
+			<h2>Contact</h2>
+			<form action="https://www.freecodecamp.com/email-submit" id="form">
+				<div class="form-group">
+					<label for="email" id="email-label">Email </label
+					><input
+						name="email"
+						type="email"
+						class="form-control"
+						id="email"
+						placeholder="Enter your email"
+						required
+					/>
+				</div>
+				<div class="form-group" id="submit-form-group">
+					<input type="submit" id="submit" value="Confirm" formaction="" />
+				</div>
+			</form>
+		</section>
 
 		<script src="script.js"></script>
 	</body>
